@@ -1,0 +1,90 @@
+{
+  "name": "SONIC-MD",
+  "description": "A WHATSAPP MD BOT CREATED BY KALINDU...",
+  "logo": "https://telegra.ph/file/9b152f452d62d0f5a206a.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "Zero-Two", "SecktorBot", "Secktor","SecktorMD","theme bot","multi device","baileys","Sam Pandey"],
+  "success_url": "/",
+  "stack": "container",
+"env": {
+  "OWNER_NAME": {
+  "description": "TYPE YOUR BOT OWNER NAME...😊",
+      "value": "KALINDU"
+      },
+    "HEROKU_API_KEY": {
+    "description": "TYPE HEROKU API KEY...😊",
+     "required" :false
+    },
+  "HEROKU_APP_NAME": {
+    "description": "TYPE HEROKU APP NAME...😊",
+     "required" :false
+    },
+   "DISABLE_PM": {
+    "description": "INBOX BLOCK SYSTEM ...😊 .",
+     "value": "false"
+    },
+   "ANTILINK_VALUES": {
+    "description": "TYPE AUTO REMOVE LINK SENDERS SNI...😊",
+     "value": "chat.whatsapp.com",
+     "required" :false
+    },
+     "ANTILINK_ACTION": {
+    "description": "TYPE LINK SENDERS REMOVE...😊",
+     "value": "remove",
+     "required" :false
+    },
+
+      "READ_MESSAGE": {
+    "description": "BOT MSG SEEN TRUE OR FALSE...😊",
+     "required" :false,
+     "value": "true"
+    },
+      "PREFIX": {
+  "description": "GIVE BOT PREFIX...😊",
+      "value": "."
+  },
+  "OWNER_NUMBER": {
+    "description": "GIVE OWNER NUMBER...😊",    
+      "value": "94758179948"
+  },
+   "SESSION_ID": {
+    "description": "GIVE SESSION_ID AFTER QR SCAN...😊 "
+  },
+    "OPENAI_API_KEY": {
+    "description": "DON'T CHANGE THIS ",
+       "value": "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",
+       "required" :false
+  },
+  "MONGODB_URI": {
+    "description": "GIVE MONGODB URL(Required)"
+  },
+    "THEME": {
+    "description": "DON'T CHANGE THIS",
+     "value": "SONIC-MD"
+  },
+    "WORKTYPE": {
+  "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
+         "value": "public"
+  },
+      "AUTO_REACTION": {
+    "description": "Reacts emoji to all commands.",
+     "value": "true",
+     "required": false 
+  },
+  "PACK_INFO": {
+    "description": "Put packname;authorname.",
+     "value": "KALINDU;SONIC-MD",
+     "required": false 
+   },
+   "heroku": {
+    "description": "Weather it is on heroku or not",
+     "value": "true",
+     "required": false 
+  }
+},
+"formation": {
+		"worker": {
+			"quantity": 1,
+			"size": "basic"
+		}
+	}
+}
